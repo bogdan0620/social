@@ -54,7 +54,7 @@ def change_user_photo(photo_id: int, user_id: int):
 
 
 # delete photo
-@photo_bp.route('/int:user_id/<int:photo_id>', methods=['DELETE'])
+@photo_bp.route('/<int:user_id>/<int:photo_id>', methods=['DELETE'])
 def delete_user_photo(user_id: int, photo_id: int):
     delete_photo = delete_photo_db(user_id, photo_id)
 
