@@ -2,7 +2,7 @@ from flask import Flask, render_template
 from flask_restx import Api
 from database.models import db
 from comment.comment_api import comment_bp
-from hashtag.hashtag_api import hastag_bp
+from hashtag.hashtag_api import hashtag_bp
 from photo.photo_api import photo_bp
 from posts.posts_api import post_bp
 from user.user_api import user_bp
