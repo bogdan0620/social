@@ -1,0 +1,39 @@
+сущности:
+photo
+post
+comment
+hashtag
+user
+
+эндпоинты:
+//GET /api/photo
+//GET /api/photo/{user_id}
+//GET /api/photo/{photo_id}
+//PUT /api/photos/{user_id}/{photo_id}
+//DELETE /api/photos/{user_id}/{photo_id}
+
+
+GET /api/post
+GET /api/post/{post_id}
+PUT /api/post/{post_id}/{user_id}
+DELETE /api/post/{post_id}/{user_id}
+
+
+GET /api/comment/{post_id}
+POST /api/comment/{post_id}
+PUT /api/comment/{comment_id}/{comment_user_id}
+DELETE /api/comment/{comment_id}/{comment_user_id}
+
+
+GET /api/hashtag?size=20&page=1
+GET /api/hashtag/{hashtag_name}
+
+
+//GET /api/user
+//GET /api/user/{user_id}
+//PUT /api/user/{user_id}
+//DELETE /api/user/{user_id}
+
+
+POST /api/signup
+POST /api/signin
