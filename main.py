@@ -25,7 +25,7 @@ def test_api():
 
 
 app.register_blueprint(comment_bp)
-app.register_blueprint(hastag_bp)
+app.register_blueprint(hashtag_bp)
 app.register_blueprint(photo_bp)
 app.register_blueprint(post_bp)
 app.register_blueprint(user_bp)
